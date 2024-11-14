@@ -1,5 +1,5 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&section=header&stroke=FF0000&strokeWidth=0000"/>
-<img width=100% src="https://capsule-render.vercel.app/api?type=venom&height=300&color=gradient&text=João%20Pedro%20Ferreira&textBg=true&fontColor=F0F8FF&strokeWidth=0&rotate=0&fontSize=45&animation=scaleIn&descSize=0"/>
+<img width=100% src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=João%20Pedro%20Ferreira&textBg=true&fontColor=F0F8FF&strokeWidth=0&rotate=0&fontSize=45&animation=scaleIn&descSize=0"/>
 
 
 <h2 align="left">Gerador Leiame de perfil:</h2>
