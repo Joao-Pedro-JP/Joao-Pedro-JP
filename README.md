@@ -1,11 +1,8 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&section=header&stroke=FF0000&strokeWidth=0000"/>
 
-
 <h2 align="left">Gerador Leiame de perfil:</h2>
-
 <p align="left">📚 Atualmente estou aprendendo java<br>🎯 Metas: curso do informática</p>
 <br>
-
 <div align="center">
   
   <img src="https://github-readme-stats.vercel.app/api?username=Joao-Pedro-jp&theme=tokyonight&show_icons=true&hide_border=false&count_private=true" height="150" alt="stats graph"  />
