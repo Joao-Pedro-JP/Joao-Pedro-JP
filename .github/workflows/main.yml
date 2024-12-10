@@ -6,7 +6,7 @@ on:
     # Every 6 hours
     - cron: "0 */6 * * *"
 
-  # This command allows us to run the Action automatically from the Actions tab.
+  # This command allows us to run the Action manually from the Actions tab.
   workflow_dispatch:
 
 jobs:
@@ -17,20 +17,21 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks repo under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      # Generates the snake
-      - uses: Platane/snk@master
-        id: snake-gif
+      # Generate the snake
+      - name: Generate the snake GIF and SVG
+        uses: Platane/snk@master
         with:
-          github_user_name: Joao-Pedro-JP
-          # These next 2 lines generate the files in the "dist" folder
+          github_user_name: mishmanners
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
 
-      # Show the status of the build. Makes it easier for debugging (if there are any issues).
-      - run: git status
+      # Show the status of the build
+      - name: Show git status
+        run: git status
 
       # Push the changes
       - name: Push changes
@@ -41,9 +42,9 @@ jobs:
           force: true
 
       # Deploy to GitHub Pages
-      - uses: crazy-max/ghaction-github-pages@v2.1.3
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
-          # The output branch we mentioned above
           target_branch: output
           build_dir: dist
         env:
